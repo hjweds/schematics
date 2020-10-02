@@ -29,7 +29,10 @@ resource kubernetes_deployment app_deployment {
       spec {
         container {
           name  = var.container_name
-          image = var.app_image          
+          image = "us.icr.io/hjw-test/portal-service:hello-world"        
+        }
+        image_pull_secrets {
+          name  = "all-icr-io"
         }
       }
     }
