@@ -12,6 +12,12 @@
 
 6. configure TLS cert for the app ingress.
 
+7. create a certificate manager
+
+8. upload a certificate and private key to certificate manager
+
+9. bind the certificate secret to cluster
+
 # Note
 
 1. Make sure the address prefix cidr blocks do not overlap with the default ones of the VPC
