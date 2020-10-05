@@ -17,17 +17,3 @@ resource ibm_container_vpc_cluster cluster {
     }
   }
 }
-
-##############################################################################
-
-################################################################################
-# Bind certificate from certificate manager to kubernetes cluster
-################################################################################
-/*
-resource ibm_container_alb_cert alb_cert {
-  cert_crn    = ibm_certificate_manager_order.cert.id
-  secret_name = "imported-${ibm_certificate_manager_order.cert.name}"
-  cluster_id  = data.ibm_container_vpc_cluster.cluster.id
-}
-*/
-##############################################################################

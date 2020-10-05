@@ -33,3 +33,13 @@ resource ibm_certificate_manager_import cert {
 }
 
 ################################################################################
+# Bind certificate from certificate manager to kubernetes cluster
+################################################################################
+
+resource ibm_container_alb_cert alb_cert {
+  cert_crn    = ibm_certificate_manager_import.cert.id
+  secret_name = var.certificate_name
+  cluster_id  = ibm_container_vpc_cluster.cluster.id
+}
+
+##############################################################################
