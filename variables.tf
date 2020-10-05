@@ -97,3 +97,27 @@ variable service_port {
 }
 
 ##############################################################################
+
+##############################################################################
+# Certificate Manager Variables
+##############################################################################
+
+variable cms_end_points {
+  description = "service endpoint of certifiate manager"
+  default     = "private"
+}
+
+variable certificate_name {
+  description = "Name of certificate"
+  default     = "cms-cert"
+}
+
+variable cert_pem {
+  description = "certificate value"
+  default     = ""
+}
+
+variable private_key {
+  description = "private key value"
+  default     = ""
+}
