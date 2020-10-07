@@ -7,3 +7,7 @@ resource "ibm_resource_key" "resourceKey" {
   role                 = "Writer"
   resource_instance_id = data.ibm_resource_instance.resource_instance.id
 }
+
+output tenant_id {
+  value       = ibm_resource_key.resourceKey.credentials.tenantId
+}
