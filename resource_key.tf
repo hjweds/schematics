@@ -11,3 +11,9 @@ resource "ibm_resource_key" "resourceKey" {
 output tenant_id {
   value       = ibm_resource_key.resourceKey.credentials.tenantId
 }
+
+resource ibm_container_bind_service bind_service" {
+  cluster_name_id             = "hjw-biv"
+  service_instance_name       = "hj-appid"
+  namespace_id                = "default"
+}
