@@ -10,13 +10,13 @@ variable ibmcloud_api_key {
 variable unique_id {
     description = "A unique identifier need to provision resources. Must begin with a letter"
     type        = string
-    default     = "hjw-demo"
+    default     = "hjw-fr2"
 }
 
 variable ibm_region {
     description = "IBM Cloud region where all resources will be deployed"
     type        = string
-    default     = "eu-de"
+    default     = "eu-fr2"
 }
 
 variable resource_group {
@@ -41,16 +41,14 @@ variable generation {
 variable zones {
     description = "Number of zones to deploy subnets in"
     type        = number
-    default     = 3
+    default     = 1
 }
 
 variable cidr_blocks {
   description = "A list of tier subnet CIDR blocks"
   type        = list //(string)
   default     = [
-    "10.10.10.0/24",
-    "10.10.20.0/24",
-    "10.10.30.0/24"
+    "10.10.10.0/24"
   ] 
 }
 

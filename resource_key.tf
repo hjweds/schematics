@@ -1,3 +1,4 @@
+/*
 data "ibm_resource_instance" "resource_instance" {
   name = "hj-appid"
 }
@@ -17,3 +18,4 @@ resource ibm_container_bind_service bind_service {
   service_instance_name       = "hj-appid"
   namespace_id                = "default"
 }
+*/

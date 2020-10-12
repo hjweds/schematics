@@ -1,7 +1,7 @@
 ##############################################################################
 # Create a Certificate Manager instance
 ##############################################################################
-
+/*
 resource ibm_resource_instance cms_instance {
   name              = "${var.unique_id}-cms"
   service           = "cloudcerts"
@@ -41,5 +41,5 @@ resource ibm_container_alb_cert alb_cert {
   secret_name = var.certificate_name
   cluster_id  = ibm_container_vpc_cluster.cluster.id
 }
-
+*/
 ##############################################################################

@@ -79,7 +79,6 @@ resource kubernetes_ingress ingress {
 
     annotations = {
       "ingress.bluemix.net/redirect-to-https" = true
-      "ingress.bluemix.net/appid-auth" = "bindSecret=binding-hj-appid namespace=default requestType=${var.request_type} serviceName=${var.app_name}-service idToken=true"
     }
   }
 
