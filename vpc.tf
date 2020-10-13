@@ -6,7 +6,7 @@
 ##############################################################################
 # Create a VPC
 ##############################################################################
-
+/*
 resource ibm_is_vpc vpc {
   name           = "${var.unique_id}-vpc"
   resource_group = data.ibm_resource_group.resource_group.id
@@ -70,5 +70,5 @@ resource ibm_is_security_group_rule allow_all_inbound {
       direction = "inbound"
       remote    = "0.0.0.0/0"
 }
-
+*/
 ##############################################################################

@@ -105,7 +105,7 @@ variable request_type {
 # Certificate Manager Variables
 ##############################################################################
 
-variable cms_end_points {
+variable end_points {
   description = "service endpoint of certifiate manager"
   default     = "private"
 }
