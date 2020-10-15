@@ -1,7 +1,7 @@
 ##############################################################################
 # App Deployment
 ##############################################################################
-/*
+
 resource kubernetes_deployment app_deployment {
   metadata {
     name      = var.app_name
@@ -31,14 +31,11 @@ resource kubernetes_deployment app_deployment {
           name  = var.container_name
           image = var.app_image       
         }
-        image_pull_secrets {
-          name  = "all-icr-io"
-        }
       }
     }
   }
 }
-*/
+
 ##############################################################################
 # Nodeport Service
 ##############################################################################
