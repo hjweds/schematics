@@ -1,4 +1,4 @@
-/*
+
 resource "ibm_resource_instance" "logdna_instance" {
   name                = "${var.unique_id}-logdna"
   location            = var.ibm_region
@@ -20,7 +20,7 @@ resource "ibm_resource_instance" "monitoringSysdig_instance" {
     service-endpoints = var.end_points
   }
 }
-
+/*
 resource "ibm_resource_instance" "es_instance" {
   name              = "${var.unique_id}-eventstreams"
   service           = "messagehub"

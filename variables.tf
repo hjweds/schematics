@@ -10,7 +10,7 @@ variable ibmcloud_api_key {
 variable unique_id {
     description = "A unique identifier need to provision resources. Must begin with a letter"
     type        = string
-    default     = "hjw-fr2"
+    default     = "bnpp-dmzr"
 }
 
 variable ibm_region {
@@ -41,7 +41,7 @@ variable generation {
 variable zones {
     description = "Number of zones to deploy subnets in"
     type        = number
-    default     = 1
+    default     = 3
 }
 
 variable cidr_blocks {

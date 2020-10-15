@@ -113,7 +113,7 @@ resource kubernetes_secret sysdig_agent {
 ##############################################################################
 # Add Configmap
 ##############################################################################
-
+/*
 resource kubernetes_config_map sysdig_config_map {
   metadata {
     name      = "sysdig-agent"
@@ -324,3 +324,4 @@ resource kubernetes_daemonset sysdig_agent {
 
   depends_on = [kubernetes_config_map.sysdig_config_map]
 }
+*/

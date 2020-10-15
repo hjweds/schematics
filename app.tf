@@ -38,7 +38,7 @@ resource kubernetes_deployment app_deployment {
     }
   }
 }
-
+*/
 ##############################################################################
 # Nodeport Service
 ##############################################################################
@@ -59,13 +59,12 @@ resource kubernetes_service app_service {
     }
 
     selector = {
-      app = kubernetes_deployment.app_deployment.metadata.0.name
+      app = var.app_name
     }
 
     type = "NodePort"
   }
 
-  depends_on = [kubernetes_deployment.app_deployment]
 }
 
 ##############################################################################
@@ -110,5 +109,5 @@ resource kubernetes_ingress ingress {
   depends_on = [kubernetes_service.app_service]
 
 }
-*/
+
 ##############################################################################

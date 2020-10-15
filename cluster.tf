@@ -1,7 +1,7 @@
 ##############################################################################
 # Create IKS on VPC Cluster
 ##############################################################################
-/*
+
 resource ibm_container_vpc_cluster cluster {
   name              = "${var.unique_id}-cluster"
   vpc_id            = ibm_is_vpc.vpc.id
@@ -17,4 +17,3 @@ resource ibm_container_vpc_cluster cluster {
     }
   }
 }
-*/
