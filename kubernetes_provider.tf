@@ -1,7 +1,7 @@
 ##############################################################################
 # Cluster Data
 ##############################################################################
-/*
+
 data ibm_container_cluster_config cluster {
   cluster_name_id   = ibm_container_vpc_cluster.cluster.id
   resource_group_id = data.ibm_resource_group.resource_group.id
@@ -22,5 +22,5 @@ provider kubernetes {
   client_key             = data.ibm_container_cluster_config.cluster.admin_key
   cluster_ca_certificate = data.ibm_container_cluster_config.cluster.ca_certificate
 }
-*/
+
 ##############################################################################

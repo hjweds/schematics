@@ -1,7 +1,7 @@
 ##############################################################################
 # App Deployment
 ##############################################################################
-/*
+
 resource kubernetes_deployment app_deployment {
   metadata {
     name      = var.app_name
@@ -30,6 +30,9 @@ resource kubernetes_deployment app_deployment {
         container {
           name  = var.container_name
           image = var.app_image       
+        }
+        image_pull_secrets {
+          name  = "all-icr-io"
         }
       }
     }
@@ -107,5 +110,5 @@ resource kubernetes_ingress ingress {
   depends_on = [kubernetes_service.app_service]
 
 }
-*/
+
 ##############################################################################
