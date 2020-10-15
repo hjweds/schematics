@@ -6,7 +6,7 @@
 ##############################################################################
 # Create a VPC
 ##############################################################################
-
+/*
 resource ibm_is_vpc vpc {
   name           = "${var.unique_id}-vpc"
   resource_group = data.ibm_resource_group.resource_group.id
@@ -95,13 +95,13 @@ resource ibm_is_security_group_rule rule8 {
       direction = "outbound"
       remote    = "159.95.0.0/16"
 }
-/*
+
 resource ibm_is_security_group_rule rule9 {
       group     = ibm_is_vpc.vpc.default_security_group
       direction = "outbound"
       remote    = "22.0.0.0/8"
 }
-*/
+
 resource ibm_is_security_group_rule rule10 {
       group     = ibm_is_vpc.vpc.default_security_group
       direction = "outbound"
@@ -155,7 +155,7 @@ resource ibm_is_security_group_rule rule16 {
         port_max = 53
       }
 }
-/*
+
 resource ibm_is_security_group_rule rule17 {
       group     = ibm_is_vpc.vpc.default_security_group
       direction = "outbound"
@@ -165,7 +165,7 @@ resource ibm_is_security_group_rule rule17 {
         port_max = 123
       }
 }
-*/
+
 resource ibm_is_security_group_rule rule18 {
       group     = ibm_is_vpc.vpc.default_security_group
       direction = "outbound"
@@ -255,4 +255,5 @@ resource ibm_is_security_group_rule rule26 {
         code = 0
       }
 }
+*/
 ##############################################################################

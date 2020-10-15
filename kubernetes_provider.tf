@@ -3,7 +3,7 @@
 ##############################################################################
 
 data ibm_container_cluster_config cluster {
-  cluster_name_id   = ibm_container_vpc_cluster.cluster.id
+  cluster_name_id   = "bnpp-dmzr-cluster"
   resource_group_id = data.ibm_resource_group.resource_group.id
   admin             = true
 }
