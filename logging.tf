@@ -1,3 +1,4 @@
+/*
 resource kubernetes_secret logdna_agent_key {
   metadata {
     name      = "logdna-agent-key"
@@ -135,3 +136,4 @@ resource kubernetes_daemonset logdna_agent {
     }
   }
 }
+*/

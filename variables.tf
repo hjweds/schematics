@@ -140,3 +140,14 @@ variable ingestion_key {
 variable test {
   default = ""
 }
+
+variable sysdig_image {
+  description = "Sysdig image"
+  default     = "icr.io/ext/sysdig/agent:latest"
+}
+
+variable sysdig_key {
+  description = "Sysdig key"
+  default     = ""
+}
+
