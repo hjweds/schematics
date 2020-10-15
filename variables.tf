@@ -16,7 +16,7 @@ variable unique_id {
 variable ibm_region {
     description = "IBM Cloud region where all resources will be deployed"
     type        = string
-    default     = "eu-fr2"
+    default     = "eu-de"
 }
 
 variable resource_group {
@@ -48,7 +48,9 @@ variable cidr_blocks {
   description = "A list of tier subnet CIDR blocks"
   type        = list //(string)
   default     = [
-    "10.10.10.0/24"
+    "10.10.10.0/24",
+    "10.10.20.0/24",
+    "10.10.30.0/24"
   ] 
 }
 
@@ -62,6 +64,12 @@ variable machine_type {
     description = "The flavor of VPC worker node to use for your cluster"
     type        = string
     default     = "cx2.2x4"
+}
+
+variable disable_public_service_endpoint {
+    description = "Disable public service endpoint for cluster"
+    type        = bool
+    default     = true
 }
 
 ##############################################################################

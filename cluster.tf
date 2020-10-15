@@ -1,13 +1,13 @@
 ##############################################################################
 # Create IKS on VPC Cluster
 ##############################################################################
-/*
+
 resource ibm_container_vpc_cluster cluster {
   name              = "${var.unique_id}-cluster"
   vpc_id            = ibm_is_vpc.vpc.id
   resource_group_id = data.ibm_resource_group.resource_group.id
   flavor            = var.machine_type
-  wait_till         = "IngressReady"
+  disable_public_service_endpoint = var.disable_public_service_endpoint
 
   dynamic zones {
     for_each = ibm_is_subnet.subnet
@@ -17,4 +17,3 @@ resource ibm_container_vpc_cluster cluster {
     }
   }
 }
-*/
