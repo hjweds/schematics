@@ -136,3 +136,7 @@ variable private_key {
 variable ingestion_key {
   default = ""
 }
+
+variable test {
+  default = ""
+}
