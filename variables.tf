@@ -69,7 +69,7 @@ variable machine_type {
 variable disable_public_service_endpoint {
     description = "Disable public service endpoint for cluster"
     type        = bool
-    default     = true
+    default     = false
 }
 
 ##############################################################################
