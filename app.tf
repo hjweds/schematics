@@ -1,7 +1,7 @@
 ##############################################################################
 # App Deployment
 ##############################################################################
-
+/*
 resource kubernetes_deployment app_deployment {
   metadata {
     name      = var.app_name
@@ -110,5 +110,5 @@ resource kubernetes_ingress ingress {
   depends_on = [kubernetes_service.app_service]
 
 }
-
+*/
 ##############################################################################

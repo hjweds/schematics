@@ -132,3 +132,7 @@ variable private_key {
   description = "private key value"
   default     = ""
 }
+
+variable ingestion_key {
+  default = ""
+}
