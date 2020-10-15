@@ -10,7 +10,6 @@ resource kubernetes_service_account sysdig_agent {
     name      = "sysdig-agent"
     namespace = "ibm-observe"
   }
-  depends_on = [kubernetes_secret.copy_image_pull_secret, ibm_resource_key.sysdig_secret]
 }
 
 ##############################################################################
