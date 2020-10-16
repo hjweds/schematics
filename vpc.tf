@@ -245,7 +245,7 @@ resource ibm_is_security_group_rule rule25 {
         port_max = 4443
       }
 }
-
+/*
 resource ibm_is_security_group_rule rule26 {
       group     = ibm_is_vpc.vpc.default_security_group
       direction = "inbound"
@@ -255,5 +255,5 @@ resource ibm_is_security_group_rule rule26 {
         code = 0
       }
 }
-
+*/
 ##############################################################################
