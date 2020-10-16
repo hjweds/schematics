@@ -50,85 +50,85 @@ resource ibm_is_subnet subnet {
 #inbound
 resource ibm_is_security_group_rule rule1 {
       group     = ibm_is_vpc.vpc.default_security_group
-      direction = "inbound"
+      direction = "outbound"
       remote    = "10.0.0.0/8"
 }
 
 resource ibm_is_security_group_rule rule2 {
       group     = ibm_is_vpc.vpc.default_security_group
-      direction = "inbound"
+      direction = "outbound"
       remote    = "159.50.0.0/16"
 }
 
 resource ibm_is_security_group_rule rule3 {
       group     = ibm_is_vpc.vpc.default_security_group
-      direction = "inbound"
+      direction = "outbound"
       remote    = "159.95.0.0/16"
 }
 
 resource ibm_is_security_group_rule rule4 {
       group     = ibm_is_vpc.vpc.default_security_group
-      direction = "inbound"
+      direction = "outbound"
       remote    = "22.0.0.0/8"
 }
 
 resource ibm_is_security_group_rule rule5 {
       group     = ibm_is_vpc.vpc.default_security_group
-      direction = "inbound"
+      direction = "outbound"
       remote    = "172.16.0.0/12"
 }
 # outbound
 resource ibm_is_security_group_rule rule6 {
       group     = ibm_is_vpc.vpc.default_security_group
-      direction = "outbound"
+      direction = "inbound"
       remote    = "10.0.0.0/8"
 }
 
 resource ibm_is_security_group_rule rule7 {
       group     = ibm_is_vpc.vpc.default_security_group
-      direction = "outbound"
+      direction = "inbound"
       remote    = "159.50.0.0/16"
 }
 
 resource ibm_is_security_group_rule rule8 {
       group     = ibm_is_vpc.vpc.default_security_group
-      direction = "outbound"
+      direction = "inbound"
       remote    = "159.95.0.0/16"
 }
 /*
 resource ibm_is_security_group_rule rule9 {
       group     = ibm_is_vpc.vpc.default_security_group
-      direction = "outbound"
+      direction = "inbound"
       remote    = "22.0.0.0/8"
 }
 */
 resource ibm_is_security_group_rule rule10 {
       group     = ibm_is_vpc.vpc.default_security_group
-      direction = "outbound"
+      direction = "inbound"
       remote    = "172.16.0.0/12"
 }
 
 resource ibm_is_security_group_rule rule11 {
       group     = ibm_is_vpc.vpc.default_security_group
-      direction = "outbound"
+      direction = "inbound"
       remote    = "166.9.62.0/23"
 }
 
 resource ibm_is_security_group_rule rule12 {
       group     = ibm_is_vpc.vpc.default_security_group
-      direction = "outbound"
+      direction = "inbound"
       remote    = "166.9.64.0/23"
 }
 
 resource ibm_is_security_group_rule rule13 {
       group     = ibm_is_vpc.vpc.default_security_group
-      direction = "outbound"
+      direction = "inbound"
       remote    = "166.9.66.0/23"
 }
 
 resource ibm_is_security_group_rule rule14 {
       group     = ibm_is_vpc.vpc.default_security_group
-      direction = "outbound"
+      direction = "inbound"
       remote    = "161.26.0.35"
       tcp {
         port_min = 443
@@ -138,7 +138,7 @@ resource ibm_is_security_group_rule rule14 {
 
 resource ibm_is_security_group_rule rule15 {
       group     = ibm_is_vpc.vpc.default_security_group
-      direction = "outbound"
+      direction = "inbound"
       remote    = "161.26.0.10"
       udp {
         port_min = 53
@@ -148,7 +148,7 @@ resource ibm_is_security_group_rule rule15 {
 
 resource ibm_is_security_group_rule rule16 {
       group     = ibm_is_vpc.vpc.default_security_group
-      direction = "outbound"
+      direction = "inbound"
       remote    = "161.26.0.11"
       udp {
         port_min = 53
@@ -158,7 +158,7 @@ resource ibm_is_security_group_rule rule16 {
 /*
 resource ibm_is_security_group_rule rule17 {
       group     = ibm_is_vpc.vpc.default_security_group
-      direction = "outbound"
+      direction = "inbound"
       remote    = "161.26.0.6"
       udp {
         port_min = 123
@@ -168,7 +168,7 @@ resource ibm_is_security_group_rule rule17 {
 */
 resource ibm_is_security_group_rule rule18 {
       group     = ibm_is_vpc.vpc.default_security_group
-      direction = "outbound"
+      direction = "inbound"
       remote    = "161.26.0.6"
       tcp {
         port_min = 80
@@ -178,7 +178,7 @@ resource ibm_is_security_group_rule rule18 {
 
 resource ibm_is_security_group_rule rule19 {
       group     = ibm_is_vpc.vpc.default_security_group
-      direction = "outbound"
+      direction = "inbound"
       remote    = "161.26.0.6"
       tcp {
         port_min = 443
@@ -188,7 +188,7 @@ resource ibm_is_security_group_rule rule19 {
 
 resource ibm_is_security_group_rule rule20 {
       group     = ibm_is_vpc.vpc.default_security_group
-      direction = "outbound"
+      direction = "inbound"
       remote    = "166.9.24.16"
       tcp {
         port_min = 443
@@ -198,7 +198,7 @@ resource ibm_is_security_group_rule rule20 {
 
 resource ibm_is_security_group_rule rule21 {
       group     = ibm_is_vpc.vpc.default_security_group
-      direction = "outbound"
+      direction = "inbound"
       remote    = "166.9.22.22"
       tcp {
         port_min = 443
@@ -208,7 +208,7 @@ resource ibm_is_security_group_rule rule21 {
 
 resource ibm_is_security_group_rule rule22 {
       group     = ibm_is_vpc.vpc.default_security_group
-      direction = "outbound"
+      direction = "inbound"
       remote    = "166.9.20.31"
       tcp {
         port_min = 443
@@ -218,7 +218,7 @@ resource ibm_is_security_group_rule rule22 {
 
 resource ibm_is_security_group_rule rule23 {
       group     = ibm_is_vpc.vpc.default_security_group
-      direction = "outbound"
+      direction = "inbound"
       remote    = "166.9.24.16"
       tcp {
         port_min = 4443
@@ -228,7 +228,7 @@ resource ibm_is_security_group_rule rule23 {
 
 resource ibm_is_security_group_rule rule24 {
       group     = ibm_is_vpc.vpc.default_security_group
-      direction = "outbound"
+      direction = "inbound"
       remote    = "166.9.22.22"
       tcp {
         port_min = 4443
@@ -238,7 +238,7 @@ resource ibm_is_security_group_rule rule24 {
 
 resource ibm_is_security_group_rule rule25 {
       group     = ibm_is_vpc.vpc.default_security_group
-      direction = "outbound"
+      direction = "inbound"
       remote    = "166.9.20.31"
       tcp {
         port_min = 4443
@@ -248,7 +248,7 @@ resource ibm_is_security_group_rule rule25 {
 
 resource ibm_is_security_group_rule rule26 {
       group     = ibm_is_vpc.vpc.default_security_group
-      direction = "outbound"
+      direction = "inbound"
       remote    = "0.0.0.0/0"
       icmp {
         type = 8
